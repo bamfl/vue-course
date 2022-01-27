@@ -1,6 +1,9 @@
 <template>
   <h2>Страница: Посты</h2>
 
+  <router-link to="/" class="mr-10">На домашнюю</router-link>
+  <router-link to="/about">К описанию</router-link>
+
   <div class="row">
     <MyButton class="mt-10 mr-10" @click="openModal" @modelValue="closeModal">Создать пост</MyButton>
     <MySelect v-model="selectedSort" :options="selectOptions" class="ml-auto mr-10"></MySelect>
