@@ -1,7 +1,8 @@
 <template>
   <div class="post">
+    <div><strong>ID: </strong>{{ post.id }}</div>
     <div><strong>Название: </strong>{{ post.title }}</div>
-    <div><strong>Описание: </strong>{{ post.descr }}</div>
+    <div><strong>Описание: </strong>{{ post.body }}</div>
     <MyButton @click="deletePost" color="delete" class="mt-10 mr-10">Удалить</MyButton>
     <MyButton color="warn">Изменить</MyButton>
   </div>
@@ -14,7 +15,7 @@ export default {
     post: {
       id: Number,
       title: String,
-      descr: String
+      body: String
     }
   },
   methods: {

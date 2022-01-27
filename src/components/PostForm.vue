@@ -2,8 +2,8 @@
   <h3>Создать пост</h3>
 
   <form @submit.prevent>
-    <MyInput v-model="post.title" placeholder="Название"></MyInput>
-    <MyInput v-model="post.descr" placeholder="Описание"></MyInput>
+    <MyInput v-model="post.title" placeholder="Название" class="mt-10"></MyInput>
+    <MyInput v-model="post.body" placeholder="Описание" class="mt-10"></MyInput>
 
     <MyButton @click="createPost" class="mt-10" type="submit">Создать</MyButton>
   </form>
@@ -17,7 +17,7 @@ export default {
       post: {
         id: null,
         title: '',
-        descr: ''
+        body: ''
       }
     };
   },
@@ -28,7 +28,7 @@ export default {
       this.post = {
         id: null,
         title: '',
-        descr: ''
+        body: ''
       };
     }
   }

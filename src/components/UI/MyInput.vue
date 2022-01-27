@@ -26,6 +26,5 @@ input {
   border: 2px solid teal;
   width: 100%;
   padding: 5px;
-  margin: 10px 0 0 0;
 }
 </style>
